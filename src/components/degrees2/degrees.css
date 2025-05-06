@@ -1,0 +1,64 @@
+.degrees {
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+  }
+
+  .degrees__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .degrees__card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.25rem;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .degrees__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .degrees__grade {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--first-color);
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+  
+  .degrees__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e272e;
+    margin-bottom: 0.5rem;
+  }
+  
+  .degrees__school {
+    font-size: 0.85rem;
+    color: #636e72;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+  
+  .degrees__rncp {
+    font-size: 0.75rem;
+    color: #a4b0be;
+    margin-bottom: 0.4rem;
+  }
+  
+  .degrees__link {
+    font-size: 0.75rem;
+    color: #0984e3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
