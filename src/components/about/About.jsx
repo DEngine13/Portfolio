@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
 import Image from "../../assets/Manga_portrait2.png";
-import Image2 from "../../assets/Architect.png";
 
 const tags = [
   "Strategic Thinking",
@@ -33,7 +32,7 @@ const About = () => {
             <p className="about__description">
               I am Duncan Hamelin, an aspiring technical Product Owner with a passion for programming and a background in management. I combine technical expertise, organizational insight and foreign languages to drive impactful projects.
             </p>
-            <a href="/DuncanHamelin.pdf" download className="btn">
+            <a href="/DuncanHamelinResume.pdf" download className="btn">
               Download CV
             </a>
           </div>
