@@ -44,8 +44,10 @@
 
 .stack__image {
     width: 80px;
-    height: auto;
+    height: 80px;         /* Ensure consistent height */
+    object-fit: contain;  /* Keeps the aspect ratio, fits inside the box */
     margin-bottom: 1rem;
+    display: block;
 }
 
 .stack__card-title {
