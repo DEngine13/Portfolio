@@ -8,7 +8,7 @@ import TypeScript from "../../assets/TypeScript.svg";
 import GitHub from "../../assets/GitHub.svg";
 import MongoDB from "../../assets/MongoDB.svg";
 import NODEJS from "../../assets/NodeJs.svg"
-import Angular from "../../assets/Angular.svg";
+import PHP from "../../assets/PHP.svg";
 import MySQL from "../../assets/MySQL.svg";
 import ReactLogo from "../../assets/React.png";
 import Figma from "../../assets/Figma.svg";
@@ -22,8 +22,8 @@ const data = [
     { id: 2, image: CSS, title: "CSS" },
     { id: 3, image: JS, title: "JavaScript" },
     { id: 4, image: TypeScript, title: "TypeScript" },
-    { id: 5, image: ReactLogo, title: "React" },
-    { id: 6, image: Angular, title: "Angular" },
+    { id: 5, image: PHP, title: "PHP" },
+    { id: 6, image: ReactLogo, title: "React" },
     { id: 7, image: NODEJS, title: "Node.js" },
     { id: 8, image: MySQL, title: "MySQL" },
     { id: 9, image: MongoDB, title: "MongoDB" },

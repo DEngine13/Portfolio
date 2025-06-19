@@ -10,7 +10,7 @@ const data = [
     image: Image1,
     title: "Web Development",
     description:
-      "Passionate by programming, I use the knowledge I developed learning different kinds of programming languages and frameworks to achieve the best results.",
+      "Passionate by programming, I use the knowledge I acquired learning different kinds of programming languages and frameworks to achieve the best results.",
   },
   {
     id: 2,

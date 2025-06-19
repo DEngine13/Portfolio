@@ -32,7 +32,7 @@ const About = () => {
             <p className="about__description">
               I am Duncan Hamelin, an aspiring technical Product Owner with a passion for programming and a background in management. I combine technical expertise, organizational insight and foreign languages to drive impactful projects.
             </p>
-            <a href="/DuncanHamelinResume.pdf" download className="btn">
+            <a href="/DuncanHamelinCV.pdf" download className="btn">
               Download CV
             </a>
           </div>
