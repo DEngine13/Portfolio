@@ -1,57 +1,78 @@
 .stack__container {
-    display: flex;
-    flex-wrap: wrap;             
-    justify-content: center;     
-    gap: 1.5rem;                 
-    margin-top: 2rem;
-    background-color: var(--body-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background-color: var(--body-color);
 }
 
 .stack__title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
 }
 
 .stack__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
-    justify-content: center;        
-    width: 100%;
-    max-width: 1000px;               
-    margin: 0 auto;                  
-    padding: 0 1rem;                 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .stack__card {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;    
-    justify-content: center; 
-    text-align: center;
-    padding: 1.5rem;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 160px;
 }
 
-
 .stack__card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .stack__image {
-    width: 80px;
-    height: 80px;         /* Ensure consistent height */
-    object-fit: contain;  /* Keeps the aspect ratio, fits inside the box */
-    margin-bottom: 1rem;
-    display: block;
+  width: 80px;
+  height: 80px; /* Ensure consistent height */
+  object-fit: contain; /* Keeps the aspect ratio, fits inside the box */
+  margin-bottom: 1rem;
+  display: block;
 }
 
 .stack__card-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #34495e;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.stack__image.native {
+  filter: grayscale(100%) opacity(50%) brightness(90%);
+}
+
+.stack__card-title.upcoming {
+  filter: grayscale(100%) opacity(50%) brightness(90%);
+}
+
+.Stack__badge {
+  display: inline-block;
+  background-color: var(--special-color);
+  color: rgb(228, 121, 60);
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  opacity: 0.6;
 }
