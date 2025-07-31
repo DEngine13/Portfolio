@@ -10,21 +10,21 @@ const data = [
     image: Image1,
     title: "Web Development",
     description:
-      "Passionate by programming, I use the knowledge I acquired learning different kinds of programming languages and frameworks to achieve the best results.",
+      "A strong foundation in coding enables me to understand technical constraints and opportunities, helping to shape realistic and innovative product visions to meet customer satisfaction.",
   },
   {
     id: 2,
     image: Image2,
     title: "Management",
     description:
-      "My Management background and degrees allow me to approach projects with a strategic and organizational mindset, ensuring efficiency and quality.",
+      "Management education and certifications empower me to lead with clarity and structure. True to Agile methods, I guide cross-functional teams, and strive to deliver high value products.",
   },
   {
     id: 3,
     image: Image3,
     title: "Foreign Languages",
     description:
-      "Proficient in English, French, and Japanese, I leverage my multilingual communication skills to facilitate international coordination across global development teams.",
+      "Proficient in English, French, and Japanese, I facilitate seamless communication between international stakeholders and development teams, enhancing collaboration in global projects.",
   },
 ];
 

@@ -37,10 +37,10 @@ const data = [
   { id: 13, image: Trello, title: "Trello" },
   { id: 14, image: Jira, title: "Jira" },
   { id: 15, image: Confluence, title: "Confluence" },
-  { id: 16, image: PYTHON, title: "Python" },
-  { id: 17, image: FLASK, title: "Flask" },
-  { id: 18, image: DJANGO, title: "Django" },
-  { id: 19, image: PHP, title: "PHP" },
+  { id: 16, image: PHP, title: "PHP" },
+  { id: 17, image: PYTHON, title: "Python" },
+  { id: 18, image: FLASK, title: "Flask" },
+  { id: 19, image: DJANGO, title: "Django" },
   { id: 20, image: ReactNative, title: "React Native" },
 ];
 
