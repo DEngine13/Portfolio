@@ -1,8 +1,8 @@
 import React from "react";
 import "./services.css";
-import Image1 from "../../assets/HTML.png";
-import Image2 from "../../assets/Management.png";
-import Image3 from "../../assets/International.png";
+import Image1 from "../../assets/Code.svg";
+import Image2 from "../../assets/Management.svg";
+import Image3 from "../../assets/Planet.svg";
 
 const data = [
   {
@@ -10,7 +10,7 @@ const data = [
     image: Image1,
     title: "Web Development",
     description:
-      "A strong foundation in coding enables me to understand technical constraints and opportunities, helping to shape realistic and innovative product visions to meet customer satisfaction.",
+      "A strong foundation in coding enables me to understand technical constraints and opportunities, shaping realistic and innovative product visions to meet customer satisfaction.",
   },
   {
     id: 2,
