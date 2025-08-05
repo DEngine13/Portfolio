@@ -27,7 +27,7 @@ const data = [
     title: "Foreign Languages",
     description:
       "Proficient in English, French, and Japanese, I facilitate seamless communication between international stakeholders and development teams, enhancing collaboration in global projects.",
-    pun: "Three known languages—and ‘working together’ sounds great in all of them 🤝",
+    pun: "Three languages, one favorite phrase: ‘working together’ 🤝",
   },
 ];
 
