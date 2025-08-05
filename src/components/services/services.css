@@ -1,33 +1,92 @@
+/* ===========================
+   Grid Layout
+=========================== */
 .services__container {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.875rem;
+  gap: 1.875rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services__card:hover .services__card-front {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: 310px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .services__card:hover .services__card-front {
+    transform: translateY(-10px);
+  }
+}
+
+/* ===========================
+   Card Structure & Flip Logic
+=========================== */
 .services__card {
-  text-align: center;
+  perspective: 1000px;
+  height: 100%;
+}
+
+.services__card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 500px; /* FIXED height for both sides */
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  border-radius: var(--border-radius);
+}
+
+.services__card.is-flipped .services__card-inner {
+  transform: rotateY(180deg);
+}
+
+.services__card-front,
+.services__card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure both sides are same size */
   padding: 1.875rem;
   border-radius: var(--border-radius);
-  background-color: var(--container-color);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
-.services__card:hover {
-  transform: translateY(-10px);
+/* ===========================
+   Front Side
+=========================== */
+.services__card-front {
+  z-index: 2;
 }
 
-.services__card:nth-child(1) {
-  background-color: var(--first-color);
-  box-shadow: 0px 5px 20px 0px rgb(108, 108, 229 / 50%);
-}
-
-.services__card:nth-child(2) {
-  background-color: #dddbf1;
-  box-shadow: 0px 5px 20px 0px rgb(249, 215, 76 / 50%);
-}
-
-.services__card:nth-child(3) {
-  background-color: #383f51;
-  box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+.services__card:hover .services__card-front {
+  cursor: pointer;
 }
 
 .services__img {
@@ -44,32 +103,53 @@
 
 .services__description {
   color: #f8f9fa;
+  font-size: 1rem;
+}
+
+/* ===========================
+   Back Side
+=========================== */
+.services__card-back {
+  transform: rotateY(180deg);
+  color: #fff;
+  padding: 2rem;
+}
+
+.services__pun {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ===========================
+   Matching Colors for Front & Back
+=========================== */
+.services__card:nth-child(1) .services__card-front,
+.services__card:nth-child(1) .services__card-back {
+  background-color: var(--first-color);
+  box-shadow: 0px 5px 20px 0px rgb(108, 108, 229 / 50%);
+}
+
+.services__card:nth-child(2) .services__card-front,
+.services__card:nth-child(2) .services__card-back {
+  background-color: #dddbf1;
+  box-shadow: 0px 5px 20px 0px rgb(249, 215, 76 / 50%);
+  color: var(--title-color);
+}
+
+.services__card:nth-child(3) .services__card-front,
+.services__card:nth-child(3) .services__card-back {
+  background-color: #383f51;
+  box-shadow: 0px 5px 20px 0px rgb(249, 123, 139 / 50%);
+}
+
+/* Adjust text color on card 2 */
+.services__card:nth-child(2) .services__description,
+.services__card:nth-child(2) .services__pun {
+  color: var(--text-color);
 }
 
 .services__card:nth-child(2) .services__title {
   color: var(--title-color);
-}
-
-.services__card:nth-child(2) .services__description {
-  color: var(--text-color);
-}
-
-@media screen and (max-width: 1024px) {
-  .services__container {
-    grid-template-columns: repeat(2, 330px);
-    justify-content: center;
-    row-gap: 1.875rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .services__container {
-    grid-template-columns: 310px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .services__container {
-    grid-template-columns: 1fr;
-  }
 }

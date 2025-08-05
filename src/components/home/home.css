@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   z-index: 0;
+  margin-top: 2rem;
 }
 
 .intro {
@@ -161,6 +162,10 @@
   .home__social-link {
     font-size: 1.125rem;
   }
+
+  .home {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -178,5 +183,9 @@
     bottom: -3rem;
     left: 0;
     width: 100%;
+  }
+
+  .home {
+    margin-top: 0;
   }
 }

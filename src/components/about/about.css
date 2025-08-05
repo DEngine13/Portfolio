@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+#aboutTitle {
+  margin-top: 1rem;
+}
+
 /* About Image - Circle, Centered, Styled */
 .about__img {
   width: 250px;
@@ -46,7 +50,7 @@
   border-bottom: 10px solid transparent;
   border-right: 15px solid var(--container-color);
   position: absolute;
-  left: -0.90rem;
+  left: -0.9rem;
   top: 20%;
 }
 
@@ -71,7 +75,7 @@
 }
 
 .btn:hover {
-  background-color: var( --title-color);
+  background-color: var(--title-color);
 }
 
 /* Personality Tags Container */

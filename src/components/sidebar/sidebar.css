@@ -32,10 +32,24 @@
   color: var(--title-color);
   font-weight: var(--font-bold);
   transition: 0.3s;
+  display: inline-block;
+  transition: 0.2s ease-out;
+
+  background-image: linear-gradient(
+    to right,
+    var(--first-color) 0%,
+    var(--title-color) 40%,
+    var(--title-color) 100%
+  );
+
+  background-clip: text;
+
+  color: transparent;
 }
 
 .nav__link:hover {
   color: var(--first-color);
+  transform: scale(1.15);
 }
 
 .copyright {
