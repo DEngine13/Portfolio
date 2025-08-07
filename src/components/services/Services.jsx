@@ -11,7 +11,7 @@ const data = [
     title: "Web Development",
     description:
       "A strong foundation in coding enables me to understand technical constraints and opportunities, shaping realistic and innovative product visions to meet customer satisfaction.",
-    pun: "I might not fix your love life, but I'll definitely fix your app 💻",
+    pun: "My preferred debugging technique: threatening the computer.",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const data = [
     title: "Management",
     description:
       "Management education and certifications empower me to lead with clarity and structure. True to Agile methods, I guide cross-functional teams, and strive to deliver high value products.",
-    pun: "My backlog management is so refined, it plays chess and drinks wine 🍷",
+    pun: "Half strategist, half diplomat, with a touch of impostor syndrome — 100% Product Owner.",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const data = [
     title: "Foreign Languages",
     description:
       "Proficient in English, French, and Japanese, I facilitate seamless communication between international stakeholders and development teams, enhancing collaboration in global projects.",
-    pun: "Three languages, one favorite phrase: ‘working together’ 🤝",
+    pun: "Three languages, one favorite word: teamwork.",
   },
 ];
 
