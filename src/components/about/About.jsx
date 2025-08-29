@@ -35,7 +35,7 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              I’m Duncan Hamelin, an aspiring Technical Product Owner with a
+              I’m Duncan Hamelin, an aspiring Technical Project Manager with a
               passion for programming and a background in management. I bring a
               unique blend of technicality, strategic thinking, and multilingual
               communication skills to align cross-functional teams and deliver

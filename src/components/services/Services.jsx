@@ -19,7 +19,7 @@ const data = [
     title: "Management",
     description:
       "Management education and certifications empower me to lead with clarity and structure. True to Agile methods, I guide cross-functional teams, and strive to deliver high value products.",
-    pun: "Half strategist, half diplomat, with a touch of impostor syndrome — 100% Product Owner.",
+    pun: "Half strategist, half diplomat, with a touch of impostor syndrome — 100% Project Manager.",
   },
   {
     id: 3,
