@@ -41,7 +41,7 @@ const About = () => {
               communication skills to align cross-functional teams and deliver
               high-impact digital products.
             </p>
-            <a href="/DuncanHamelinCV.pdf" download className="btn">
+            <a href="/DuncanHamelin_CV.pdf" download className="btn">
               Download CV
             </a>
           </div>
